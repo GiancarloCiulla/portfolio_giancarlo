@@ -207,3 +207,11 @@
         }
     }
 }
+@media (max-width: $breakpoint-sm) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+}

@@ -17,3 +17,12 @@
         margin: 0 auto;
     }
 }
+@media (max-width: $breakpoint-md) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    .swiper-slide {
+        width: 100px;
+    }
+}
+
