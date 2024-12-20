@@ -1,6 +1,9 @@
+@import 'variables';
+@import 'globals';
+
 .portfolio-section {
     padding: 2rem;
-    background-color: #f9f9f9;
+    background: linear-gradient(to bottom right, #2AB7CA, #D9DCD6);
 
     h2 {
         text-align: center;

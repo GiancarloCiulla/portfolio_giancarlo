@@ -32,48 +32,50 @@ const Contact = () => {
 
     return (
         <section id="contact" className="contact">
-            <h2>Contacto</h2>
-            <p className="intro">
-                Estoy disponible para proyectos interesantes y oportunidades de colaboración. ¡Ponte en contacto conmigo!
-            </p>
-
-            {/* Opciones de contacto */}
-            <div className="contact-options">
-                <a
-                    href="https://linkedin.com/in/giancarlo"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="contact-card"
-                >
-                    <i className="fab fa-linkedin"></i>
-                    <p>LinkedIn</p>
-                </a>
-                <a
-                    href="https://github.com/GiancarloCiulla"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="contact-card"
-                >
-                    <i className="fab fa-github"></i>
-                    <p>GitHub</p>
-                </a>
-                <a href="mailto:giancarlociulla.alfano@gmail.com" className="contact-card">
-                    <i className="fas fa-envelope"></i>
-                    <p>Email</p>
-                </a>
-                <a href="tel:+34622001035" className="contact-card">
-                    <i className="fas fa-phone"></i>
-                    <p>Llamar</p>
-                </a>
-                <a
-                    href="https://wa.me/34622001035"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="contact-card"
-                >
-                    <i className="fab fa-whatsapp"></i>
-                    <p>WhatsApp</p>
-                </a>
+            {/* Contenedor Superior */}
+            <div className="contact-header">
+                <h2>Contacto</h2>
+                <p className="intro">
+                    Estoy disponible para proyectos interesantes y oportunidades de colaboración. ¡Ponte en contacto conmigo!
+                </p>
+                {/* Opciones de contacto */}
+                <div className="contact-options">
+                    <a
+                        href="https://linkedin.com/in/giancarlo"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="contact-card"
+                    >
+                        <i className="fab fa-linkedin"></i>
+                        <p>LinkedIn</p>
+                    </a>
+                    <a
+                        href="https://github.com/GiancarloCiulla"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="contact-card"
+                    >
+                        <i className="fab fa-github"></i>
+                        <p>GitHub</p>
+                    </a>
+                    <a href="mailto:giancarlociulla.alfano@gmail.com" className="contact-card">
+                        <i className="fas fa-envelope"></i>
+                        <p>Email</p>
+                    </a>
+                    <a href="tel:+34622001035" className="contact-card">
+                        <i className="fas fa-phone"></i>
+                        <p>Llamar</p>
+                    </a>
+                    <a
+                        href="https://wa.me/34622001035"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="contact-card"
+                    >
+                        <i className="fab fa-whatsapp"></i>
+                        <p>WhatsApp</p>
+                    </a>
+                </div>
             </div>
 
             {/* Formulario de contacto */}
@@ -115,92 +117,3 @@ const Contact = () => {
 
 export default Contact;
 
-
-// import React from "react";
-// import "../styles/Contact.scss";
-
-// const Contact = () => {
-//     return (
-//         <section id="contact" className="contact">
-//             <h2>Contacto</h2>
-//             <p className="intro">
-//                 Estoy disponible para proyectos interesantes y oportunidades de colaboración. ¡Ponte en contacto conmigo!
-//             </p>
-
-//             {/* Opciones de contacto */}
-//             <div className="contact-options">
-//                 <a
-//                     href="https://linkedin.com/in/giancarlo"
-//                     target="_blank"
-//                     rel="noopener noreferrer"
-//                     className="contact-card"
-//                 >
-//                     <i className="fab fa-linkedin"></i>
-//                     <p>LinkedIn</p>
-//                 </a>
-//                 <a
-//                     href="https://github.com/GiancarloCiulla"
-//                     target="_blank"
-//                     rel="noopener noreferrer"
-//                     className="contact-card"
-//                 >
-//                     <i className="fab fa-github"></i>
-//                     <p>GitHub</p>
-//                 </a>
-//                 <a href="mailto:giancarlociulla.alfano@gmail.com" className="contact-card">
-//                     <i className="fas fa-envelope"></i>
-//                     <p>Email</p>
-//                 </a>
-//                 <a href="tel:+34622001035" className="contact-card">
-//                     <i className="fas fa-phone"></i>
-//                     <p>Llamar</p>
-//                 </a>
-//                 <a
-//                     href="https://wa.me/34622001035"
-//                     target="_blank"
-//                     rel="noopener noreferrer"
-//                     className="contact-card"
-//                 >
-//                     <i className="fab fa-whatsapp"></i>
-//                     <p>WhatsApp</p>
-//                 </a>
-//             </div>
-
-//             {/* Formulario de contacto */}
-//             <div className="contact-form">
-//                 <h3>Formulario de Contacto</h3>
-//                 <form
-//                     onSubmit={(e) => {
-//                         e.preventDefault();
-//                         alert("Mensaje enviado. ¡Gracias por contactarme!");
-//                     }}
-//                 >
-//                     <input type="text" placeholder="Tu nombre" required />
-//                     <input type="email" placeholder="Tu email" required />
-//                     <textarea placeholder="Tu mensaje" required></textarea>
-//                     <button type="submit">Enviar</button>
-//                 </form>
-//             </div>
-//         </section>
-//     );
-// };
-
-// export default Contact;
-
-
-
-
-// import React from "react";
-// import ContactForm from "../components/ContactForm";
-
-// const Contact = () => {
-//     return (
-//         <section id="contact">
-//             <h2>Contacto</h2>
-//             <p>Envíame un mensaje si quieres colaborar conmigo.</p>
-//             <ContactForm />
-//         </section>
-//     );
-// };
-
-// export default Contact;

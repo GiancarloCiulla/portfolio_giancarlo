@@ -1,217 +1,120 @@
-.home {
-    font-family: "Arial, sans-serif";
-    color: #333;
-    position: relative;
+@import 'variables';
+@import 'globals';
+// Home.scss
 
-    /* Hero Section */
+.home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+
     .hero {
+        flex: 1;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-        height: 75vh; // Altura para pantallas grandes
-        background-color: #f9f9f9;
+        background: linear-gradient(to bottom right, #2AB7CA, #D9DCD6);
+        color: #fff;
         padding: 2rem;
-        position: relative;
 
         .hero-content {
             max-width: 800px;
 
             h1 {
-                font-size: 3.5rem;
-                margin-bottom: 1rem;
-
+                font-size: 3rem;
                 span {
-                    color: #4caf50; // Destacar el nombre
+                    color: #ffd700;
                 }
             }
 
             p {
+                margin: 1rem 0;
                 font-size: 1.2rem;
-                line-height: 1.6;
-                margin-bottom: 1rem;
-
-                strong {
-                    color: #4caf50; // Resaltar palabras clave
-                }
+                line-height: 1.8;
             }
-        }
 
-        .buttons {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-top: 1.5rem;
+            .buttons {
+                margin-top: 2rem;
 
-            .cta-button {
-                background-color: #4caf50;
-                color: #fff;
-                padding: 0.75rem 1.5rem;
-                border-radius: 5px;
-                text-decoration: none;
-                font-size: 1rem;
-                font-weight: bold;
-                transition: background-color 0.3s ease;
+                .cta-button {
+                    display: inline-block;
+                    padding: 0.8rem 1.5rem;
+                    margin: 0.5rem;
+                    text-decoration: none;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    border-radius: 5px;
+                    color: #4a90e2;
+                    background-color: #fff;
+                    transition: all 0.3s ease-in-out;
 
-                &:hover {
-                    background-color: #388e3c;
-                }
-
-                &.outline {
-                    background-color: transparent;
-                    color: #4caf50;
-                    border: 2px solid #4caf50;
-
-                    &:hover {
-                        background-color: #4caf50;
+                    &.outline {
+                        background: transparent;
+                        border: 2px solid #fff;
                         color: #fff;
                     }
-                }
-            }
-        }
-    }
-
-    /* Carrusel de Habilidades */
-    .skills-carousel {
-        width: 100%;
-        min-height: 20vh; // Aseguramos que tenga altura mínima
-        background-color: #fff;
-        padding: 2rem 0;
-
-        .swiper {
-            width: 100%;
-            height: auto;
-
-            .swiper-slide {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                width: 150px; // Ajuste dinámico del ancho
-                margin: 0 15px; // Espacio entre slides
-
-                .skill-card {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    background-color: #f4f4f4;
-                    border-radius: 10px;
-                    padding: 1rem;
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                    transition: transform 0.3s ease;
-
-                    i {
-                        font-size: 3rem;
-                        color: #4caf50;
-                        margin-bottom: 0.5rem;
-                    }
-
-                    p {
-                        font-size: 1rem;
-                        font-weight: bold;
-                        color: #333;
-                    }
 
                     &:hover {
-                        transform: scale(1.1);
+                        background-color: #ffd700;
+                        color: #4a90e2;
                     }
                 }
             }
         }
     }
-
-    /* Responsividad */
-    @media (max-width: 1024px) {
-        .hero {
-            height: 60vh;
-
-            .hero-content {
-                h1 {
-                    font-size: 3rem;
-                }
-
-                p {
-                    font-size: 1.1rem;
-                }
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr); /* 8 columnas */
+        gap: 1.5rem;
+        padding: 2rem;
+        padding-bottom: 10rem; /* Espacio extra para evitar corte */
+        background: #f9f9f9;
+    
+        .skill-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+    
+            i {
+                font-size: 2.5rem;
+                color: #4a90e2;
+                margin-bottom: 0.5rem;
             }
-
-            .buttons {
-                flex-direction: column;
-                align-items: center;
-
-                .cta-button {
-                    width: 100%;
-                    text-align: center;
-                    max-width: 250px;
-                }
+    
+            p {
+                font-size: 1rem;
+                color: #333;
+                text-align: center;
             }
-        }
-
-        .skills-carousel {
-            min-height: 25vh; // Ajustamos altura para tablets
+    
+            &:hover {
+                transform: scale(1.05);
+            }
         }
     }
-
-    @media (max-width: 768px) {
-        .hero {
-            height: 50vh;
-
-            .hero-content {
-                h1 {
-                    font-size: 2.5rem;
-                }
-
-                p {
-                    font-size: 1rem;
-                }
-            }
-
-            .buttons {
-                gap: 1rem;
-            }
-        }
-
-        .skills-carousel {
-            min-height: 30vh; // Ajustamos altura en móviles
-        }
-    }
-
-    @media (max-width: 480px) {
-        .hero {
-            height: 50vh;
-
-            .hero-content {
-                h1 {
-                    font-size: 2rem;
-                }
-
-                p {
-                    font-size: 0.9rem;
-                }
-            }
-
-            .buttons {
-                flex-direction: column;
-                gap: 0.5rem;
-
-                .cta-button {
-                    width: 100%;
-                    max-width: 200px;
-                }
-            }
-        }
-
-        .skills-carousel {
-            min-height: 35vh; // Altura mínima para móviles pequeños
-        }
-    }
-}
-@media (max-width: $breakpoint-sm) {
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-    .hero-content p {
+    
+    .footer {
+        position: relative; /* Cambiar a relative si está fixed */
+        text-align: center;
+        background: #333;
+        color: #fff;
+        padding: 1rem 0;
         font-size: 0.9rem;
     }
-}
+    
+    /* Ajuste para asegurar que el contenido no quede cortado */
+    .home {
+        min-height: 100vh; /* Altura mínima para la página completa */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}    

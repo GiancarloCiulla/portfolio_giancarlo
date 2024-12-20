@@ -1,7 +1,4 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
 import "../styles/Home.scss";
 
 const Home = () => {
@@ -16,11 +13,12 @@ const Home = () => {
         { name: "React", icon: "fab fa-react" },
         { name: "IA Generativa", icon: "fas fa-robot" },
         { name: "SQL & MongoDB", icon: "fas fa-database" },
-        { name: "Next.js", icon: "fab fa-nextjs" },
         { name: "TypeScript", icon: "fab fa-js-square" },
         { name: "Figma", icon: "fab fa-figma" },
         { name: "Jest", icon: "fas fa-vial" },
         { name: "Cypress", icon: "fas fa-microscope" },
+        { name: "Next.js", icon: "fas fa-code" }, 
+        { name: "Redux", icon: "fas fa-dice-d20" },
     ];
 
     return (
@@ -55,30 +53,14 @@ const Home = () => {
                 </div>
             </div>
 
-            {/* Carrusel de Habilidades */}
-            <div className="skills-carousel">
-                <Swiper
-                    modules={[Autoplay]}
-                    slidesPerView="auto" // Ocupar espacio automáticamente
-                    spaceBetween={20}
-                    autoplay={{
-                        delay: 0,
-                        disableOnInteraction: false,
-                        pauseOnMouseEnter: false,
-                        waitForTransition: false,
-                        speed: 4000, // Velocidad constante
-                    }}
-                    loop={true} // Repetición infinita
-                    allowTouchMove={false} // Desactivar interacción manual
-                    style={{ width: "100%", height: "auto" }}
-                >
-                    {skills.map((skill, index) => (
-                        <SwiperSlide key={index} className="skill-card">
-                            <i className={skill.icon}></i>
-                            <p>{skill.name}</p>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
+            {/* Grid de Habilidades */}
+            <div className="skills-grid">
+                {skills.map((skill, index) => (
+                    <div key={index} className="skill-card">
+                        <i className={skill.icon}></i>
+                        <p>{skill.name}</p>
+                    </div>
+                ))}
             </div>
         </section>
     );
