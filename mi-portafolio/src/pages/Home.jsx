@@ -43,7 +43,7 @@ const Home = () => {
                             Ver mi Portafolio
                         </a>
                         <a
-                            href={`${process.env.PUBLIC_URL}/cv/cv.pdf`}
+                            href={`${process.env.PUBLIC_URL}/images/cv.pdf`}
                             className="cta-button outline"
                             download
                         >
