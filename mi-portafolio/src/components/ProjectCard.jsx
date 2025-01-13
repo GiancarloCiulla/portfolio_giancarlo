@@ -12,9 +12,8 @@ const ProjectCard = ({ title, description, image, repoLink, deployLink }) => {
                     <a href={deployLink} target="_blank" rel="noopener noreferrer" className="project-button demo">
                         Ver Despliegue
                     </a>
-                    <a href={repoLink} target="_blank" rel="noopener noreferrer" className="project-button repo">
-                        Ver Repositorio
-                    </a>
+                  
+                    
                 </div>
             </div>
         </div>

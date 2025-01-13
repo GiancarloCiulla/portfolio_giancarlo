@@ -1,28 +1,37 @@
 @import 'variables';
 @import 'globals';
-// Home.scss
 
+// General Styles
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+// Home.scss
 .home {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
 
+    // Hero Section
     .hero {
-        flex: 1;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        background: linear-gradient(to bottom right, #2AB7CA, #D9DCD6);
+        background: linear-gradient(to bottom right, #2ab7ca, #d9dcd6);
         color: #fff;
         padding: 2rem;
 
         .hero-content {
-            max-width: 800px;
+            max-width: 700px;
 
             h1 {
-                font-size: 3rem;
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+
                 span {
                     color: #ffd700;
                 }
@@ -35,12 +44,14 @@
             }
 
             .buttons {
-                margin-top: 2rem;
-
+                margin-top: 2rem; /* Espacio superior para separar los botones del texto */
+                display: flex;
+                justify-content: center; /* Centra los botones horizontalmente */
+        
                 .cta-button {
                     display: inline-block;
                     padding: 0.8rem 1.5rem;
-                    margin: 0.5rem;
+                    margin: 0 0.5rem; /* Separación horizontal entre los botones */
                     text-decoration: none;
                     font-size: 1rem;
                     font-weight: bold;
@@ -48,13 +59,14 @@
                     color: #4a90e2;
                     background-color: #fff;
                     transition: all 0.3s ease-in-out;
-
+                    border: 2px solid #5b8fca;
+        
                     &.outline {
-                        background: transparent;
-                        border: 2px solid #fff;
-                        color: #fff;
+                        
+                        border: 2px solid #5b8fca;
+                        color:#4a90e2;
                     }
-
+        
                     &:hover {
                         background-color: #ffd700;
                         color: #4a90e2;
@@ -63,58 +75,276 @@
             }
         }
     }
-    .skills-grid {
-        display: grid;
-        grid-template-columns: repeat(8, 1fr); /* 8 columnas */
+}
+.skills-section {
+    padding: 3rem 1rem;
+    background: #f9f9f9;
+    text-align: center;
+
+    h2 {
+        font-size: 2rem;
+        color: #2ab7ca;
+        margin-bottom: 2rem;
+    }
+
+    .skills-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         gap: 1.5rem;
-        padding: 2rem;
-        padding-bottom: 10rem; /* Espacio extra para evitar corte */
-        background: #f9f9f9;
-    
-        .skill-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 1rem;
+        overflow-x: auto; /* Habilitamos desplazamiento horizontal */
+        padding: 1rem;
+        scroll-behavior: smooth; /* Animación suave al desplazarse */
+
+        .skill-item {
+            flex: 0 0 auto; /* Evitamos que los ítems se redimensionen */
+            width: 100px; /* Tamaño fijo */
+            height: 100px;
             background: #fff;
             border: 1px solid #ddd;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
             transition: transform 0.3s ease;
-    
+
             i {
-                font-size: 2.5rem;
-                color: #4a90e2;
+                font-size: 2rem;
+                color: #2ab7ca;
                 margin-bottom: 0.5rem;
             }
-    
+
             p {
-                font-size: 1rem;
+                font-size: 0.9rem;
                 color: #333;
-                text-align: center;
             }
-    
+
             &:hover {
-                transform: scale(1.05);
+                transform: scale(1.1);
             }
         }
     }
-    
-    .footer {
-        position: relative; /* Cambiar a relative si está fixed */
-        text-align: center;
-        background: #333;
-        color: #fff;
-        padding: 1rem 0;
-        font-size: 0.9rem;
+}
+
+// Responsividad
+@media (max-width: 768px) {
+    .skills-container {
+        gap: 1rem;
+
+        .skill-item {
+            width: 80px;
+            height: 80px;
+
+            i {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
+        }
     }
-    
-    /* Ajuste para asegurar que el contenido no quede cortado */
-    .home {
-        min-height: 100vh; /* Altura mínima para la página completa */
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+}
+
+@media (max-width: 480px) {
+    .skills-container {
+        gap: 0.5rem;
+
+        .skill-item {
+            width: 70px;
+            height: 70px;
+
+            i {
+                font-size: 1.2rem;
+            }
+
+            p {
+                font-size: 0.7rem;
+            }
+        }
     }
-}    
+}
+
+
+
+
+
+// @import 'variables';
+// @import 'globals';
+
+// // Home.scss
+// .home {
+//     display: flex;
+//     flex-direction: column;
+//     height: 100vh;
+//     overflow: hidden;
+
+//     .hero {
+//         flex: 1;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         text-align: center;
+//         background: linear-gradient(to bottom right, #2AB7CA, #D9DCD6);
+//         color: #fff;
+//         padding: 2rem;
+
+//         .hero-content {
+//             max-width: 800px;
+
+//             h1 {
+//                 font-size: 3rem;
+//                 span {
+//                     color: #ffd700;
+//                 }
+//             }
+
+//             p {
+//                 margin: 1rem 0;
+//                 font-size: 1.5rem;
+//                 line-height: 1.8;
+
+//             }
+            
+
+//             .buttons {
+//                 margin-top: 2rem;
+
+//                 .cta-button {
+//                     display: inline-block;
+//                     padding: 0.8rem 1.5rem;
+//                     margin: 0.5rem;
+//                     text-decoration: none;
+//                     font-size: 1rem;
+//                     font-weight: bold;
+//                     border-radius: 5px;
+//                     color: #4a90e2;
+//                     background-color: #fff;
+//                     transition: all 0.3s ease-in-out;
+
+//                     &.outline {
+//                         background: transparent;
+//                         border: 2px solid #fff;
+//                         color: #fff;
+//                     }
+
+//                     &:hover {
+//                         background-color: #ffd700;
+//                         color: #4a90e2;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     .skills-grid {
+//         display: grid;
+//         grid-template-columns: repeat(4, 1fr); /* Ajuste inicial para pantallas medianas */
+//         gap: 1.5rem;
+//         padding: 2rem;
+//         padding-bottom: 10rem; /* Espacio extra para evitar corte */
+//         background: #f9f9f9;
+
+//         .skill-card {
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             justify-content: center;
+//             padding: 1rem;
+//             background: #fff;
+//             border: 1px solid #ddd;
+//             border-radius: 8px;
+//             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+//             transition: transform 0.3s ease;
+
+//             i {
+//                 font-size: 2.5rem;
+//                 color: #4a90e2;
+//                 margin-bottom: 0.5rem;
+//             }
+
+//             p {
+//                 font-size: 1rem;
+//                 color: #333;
+//                 text-align: center;
+//             }
+
+//             &:hover {
+//                 transform: scale(1.05);
+//             }
+//         }
+//     }
+
+//     .footer {
+//         position: relative;
+//         text-align: center;
+//         background: #333;
+//         color: #fff;
+//         padding: 1rem 0;
+//         font-size: 0.9rem;
+//     }
+
+//     // Ajuste para asegurar que el contenido no quede cortado
+//     .home {
+//         min-height: 100vh;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//     }
+// }
+
+// // Media Queries para dispositivos móviles
+// @media (max-width: 768px) {
+//     .hero-content {
+//         h1 {
+//             font-size: 2rem; /* Reduce el tamaño del título */
+//         }
+
+//         p {
+//             font-size: 1.2rem; /* Reduce el tamaño del texto */
+//         }
+
+//         .buttons {
+//             .cta-button {
+//                 font-size: 0.9rem; /* Ajusta el tamaño del botón */
+//                 padding: 0.7rem 1.2rem; /* Reduce el padding */
+//             }
+//         }
+//     }
+
+//     .skills-grid {
+//         grid-template-columns: repeat(2, 1fr); /* Cambia a 2 columnas en pantallas pequeñas */
+//         gap: 1rem; /* Reduce el espacio entre tarjetas */
+//     }
+// }
+
+// @media (max-width: 480px) {
+//     .hero-content {
+//         h1 {
+//             font-size: 1.8rem; /* Ajuste adicional para pantallas muy pequeñas */
+//         }
+
+//         p {
+//             font-size: 1rem; /* Reduce más el texto */
+//         }
+
+//         .buttons {
+//             .cta-button {
+//                 font-size: 0.8rem; /* Ajuste para pantallas pequeñas */
+//                 padding: 0.6rem 1rem;
+//             }
+//         }
+//     }
+
+//     .skills-grid {
+//         grid-template-columns: 1fr; /* Una sola columna en pantallas muy pequeñas */
+//         gap: 0.5rem; /* Espacio mínimo entre tarjetas */
+//     }
+
+//     .footer {
+//         font-size: 0.8rem; /* Reduce el texto del footer */
+//     }
+// }

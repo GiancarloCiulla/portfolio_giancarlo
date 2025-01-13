@@ -3,6 +3,7 @@
 .navbar {
     background-color: $secondary-color;
     padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Añade sombra para resaltar la barra
 
     ul {
         list-style: none;
@@ -16,6 +17,8 @@
             a {
                 color: $text-color;
                 font-weight: bold;
+                text-decoration: none;
+                transition: color 0.3s ease; // Transición para hover
 
                 &:hover {
                     color: $primary-color;
@@ -24,10 +27,27 @@
         }
     }
 }
+
 @media (max-width: $breakpoint-md) {
-    .navbar ul {
-        flex-direction: column;
-        gap: 0.5rem;
+    .navbar {
+        padding: 0.5rem; // Reduce el padding para pantallas pequeñas
+
+        ul {
+            flex-direction: column; // Cambia a columna
+            align-items: center; // Centra los elementos
+            gap: 1rem; // Ajusta el espacio entre elementos
+        }
+
+        li {
+            width: 100%; // Ocupa todo el ancho disponible
+            text-align: center;
+
+            a {
+                display: block; // Asegura que sea fácil de tocar
+                padding: 0.5rem 0; // Espacio interno
+            }
+        }
     }
 }
+
 

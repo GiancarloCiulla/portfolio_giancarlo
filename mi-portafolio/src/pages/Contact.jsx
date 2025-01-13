@@ -8,6 +8,19 @@ const Contact = () => {
         message: "",
     });
 
+    const [hoverInfo, setHoverInfo] = useState({
+        email: false,
+        phone: false,
+    });
+
+    const handleMouseEnter = (field) => {
+        setHoverInfo({ ...hoverInfo, [field]: true });
+    };
+
+    const handleMouseLeave = (field) => {
+        setHoverInfo({ ...hoverInfo, [field]: false });
+    };
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
@@ -36,7 +49,7 @@ const Contact = () => {
             <div className="contact-header">
                 <h2>Contacto</h2>
                 <p className="intro">
-                    Estoy disponible para proyectos interesantes y oportunidades de colaboración. ¡Ponte en contacto conmigo!
+                    Estoy disponible para ofertas de trabajo, proyectos interesantes y oportunidades de colaboración. ¡Ponte en contacto conmigo!
                 </p>
                 {/* Opciones de contacto */}
                 <div className="contact-options">
@@ -58,13 +71,25 @@ const Contact = () => {
                         <i className="fab fa-github"></i>
                         <p>GitHub</p>
                     </a>
-                    <a href="mailto:giancarlociulla.alfano@gmail.com" className="contact-card">
+                    <a
+                        href="mailto:giancarlociulla.alfano@gmail.com"
+                        className="contact-card"
+                        onMouseEnter={() => handleMouseEnter("email")}
+                        onMouseLeave={() => handleMouseLeave("email")}
+                    >
                         <i className="fas fa-envelope"></i>
-                        <p>Email</p>
+                        <p>
+                            {hoverInfo.email ? "giancarlociulla.alfano@gmail.com" : "Email"}
+                        </p>
                     </a>
-                    <a href="tel:+34622001035" className="contact-card">
+                    <a
+                        href="tel:+34622001035"
+                        className="contact-card"
+                        onMouseEnter={() => handleMouseEnter("phone")}
+                        onMouseLeave={() => handleMouseLeave("phone")}
+                    >
                         <i className="fas fa-phone"></i>
-                        <p>Llamar</p>
+                        <p>{hoverInfo.phone ? "+34 622 001 035" : "Llamar"}</p>
                     </a>
                     <a
                         href="https://wa.me/34622001035"
@@ -116,4 +141,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

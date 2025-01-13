@@ -8,17 +8,19 @@
 
     /* Encabezado y opciones de contacto */
     .contact-header {
-        margin-bottom: 3rem; /* Espacio entre el encabezado y el formulario */
+        margin-bottom: 3rem; 
         text-align: center;
-
+        
         h2 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
         }
-
+        
         .intro {
+           
             font-size: 1.2rem;
             margin-bottom: 2rem;
+            font-family: serif
         }
 
         .contact-options {

@@ -19,13 +19,65 @@
         max-width: 1200px;
         margin: 0 auto;
     }
+
+    .portfolio-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between; // Distribuye uniformemente el contenido
+        padding: 1.5rem;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: auto; // Empuja el botón hacia la parte inferior
+        }
+
+        .portfolio-button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #fff;
+            background: #007BFF;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            margin-top: 1rem;
+            transition: background 0.3s ease;
+
+            &:hover {
+                background: darken(#007BFF, 10%);
+            }
+        }
+    }
 }
+
 @media (max-width: $breakpoint-md) {
     .portfolio-grid {
         grid-template-columns: 1fr;
     }
-    .swiper-slide {
-        width: 100px;
-    }
 }
-

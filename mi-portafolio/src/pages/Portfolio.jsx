@@ -5,46 +5,41 @@ import "../styles/Portfolio.scss";
 const projects = [
     {
         title: "vihsible",
-        description: "Un chatbot creado para la FELTGBI+ desarrolado con dos backs dos front y conectados a un LLM para una respuesta personalizada",
+        description: "Un chatbot creado para la FELTGBI+ desarrolado con dos backs dos front y conectados a un LLM para una respuesta personalizada.",
         image: `${process.env.PUBLIC_URL}/images/vihsible.png`, 
-        repoLink: "https://github.com/GiancarloCiulla/psico_final_proyect",
-        deployLink: "https://chatbot-ai-felgtbi.netlify.app/",
+        deployLink: "https://chatbot-ai-felgtbi.netlify.app/"
     },
     {
         title: "Espacio para el alma",
         description: "Blog personal para una psicóloga, realizado con React y un back que permite la edición completa del blog desde un panel de administrador bastante intuitivo.",
         image: `${process.env.PUBLIC_URL}/images/psico_web.png`,
-        repoLink: "https://github.com/GiancarloCiulla/psico_final_proyect",
-        deployLink: "https://psico-blog-demo.netlify.app", 
+        deployLink: "https://psico-blog-demo.netlify.app" 
     },
     {
-        title: "Proyecto 3",
-        description: "Descripción breve del proyecto número 3.",
-        image: `${process.env.PUBLIC_URL}/images/enproceso.jpeg`,
-        repoLink: "https://github.com/GiancarloCiulla/psico_final_proyect",
-        deployLink: "https://psico-blog-demo.netlify.app",
+        title: "La cota 1000",
+        description: "Juego para moviles, retro y sencillo de un skater el cual debe evitar caer en los huecos, realizado con react y guardando datos en firestore.",
+        image: `${process.env.PUBLIC_URL}/images/lacota1000.png`,
+        deployLink: "https://lacota1000.netlify.app/",
     },
     {
-        title: "Proyecto 4",
-        description: "Un chatbot creado para la FELTGBI+ desarrolado con dos backs dos front y conectados a un LLM para una respuesta personalizada",
-        image: `${process.env.PUBLIC_URL}/images/vihsible.png`, 
-        image: `${process.env.PUBLIC_URL}/images/enproceso.jpeg`,
-        deployLink: "https://chatbot-ai-felgtbi.netlify.app/",
+        title: "WheatherApp",
+        description: "Aplicacion del tiempo, nos facilita el clima por semanas basado en temperatura máxima y minima.", 
+        image: `${process.env.PUBLIC_URL}/images/Wheatherapp.png`,
+        deployLink: "https://weatherappgc.netlify.app",
     },
     {
         title: "Proyecto 5",
-        description: "Blog personal para una psicóloga, realizado con React y un back que permite la edición completa del blog desde un panel de administrador bastante intuitivo.",
-        image: `${process.env.PUBLIC_URL}/images/enproceso.jpeg`,
-        repoLink: "https://github.com/GiancarloCiulla/psico_final_proyect",
-        deployLink: "https://psico-blog-demo.netlify.app", 
+        description: "En proceso...",
+        image: `${process.env.PUBLIC_URL}/images/`,
+        deployLink: "",
     },
     {
         title: "Proyecto 6",
-        description: "Descripción breve del proyecto número 3.",
+        description: "En proceso...",
         image: `${process.env.PUBLIC_URL}/images/enproceso.jpeg`,
-        repoLink: "https://github.com/GiancarloCiulla/psico_final_proyect",
-        deployLink: "https://psico-blog-demo.netlify.app",
+        deployLink: "",
     },
+
 ];
 
 
