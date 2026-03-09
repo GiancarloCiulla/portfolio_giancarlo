@@ -1,20 +1,29 @@
-@import "variables";
-@import "~@fortawesome/fontawesome-free/css/all.css";
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
 
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
-    
-    background-color: $background-color;
-    color: $secondary-color;
+    font-family: "Manrope", "Segoe UI", sans-serif;
+    color: #f8fafc;
+    background: #0f172a;
     line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
 }
 
 a {
     text-decoration: none;
-    color: $primary-color;
-
-    &:hover {
-        color: darken($primary-color, 10%);
-    }
 }

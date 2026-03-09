@@ -1,17 +1,33 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "../styles/Navbar.scss";
-// import "./Navbar.css";
 
 const Navbar = () => {
     return (
-        <nav className="navbar">
-            <ul>
-                <li><Link to="/">Inicio</Link></li>
-                <li><Link to="/portfolio">Portafolio</Link></li>
-                <li><Link to="/contact">Contacto</Link></li>
-            </ul>
-        </nav>
+        <header className="navbar" id="inicio">
+            <div className="container navbar-inner">
+                <a className="brand" href="#inicio">
+                    Giancarlo Ciulla
+                </a>
+                <nav aria-label="Navegacion principal">
+                    <ul className="nav-links">
+                        <li>
+                            <a href="#inicio">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#sobre-mi">Sobre mi</a>
+                        </li>
+                        <li>
+                            <a href="#stack">Stack</a>
+                        </li>
+                        <li>
+                            <a href="#proyectos">Proyectos</a>
+                        </li>
+                        <li>
+                            <a href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
     );
 };
 

@@ -54,7 +54,7 @@ const Contact = () => {
                 {/* Opciones de contacto */}
                 <div className="contact-options">
                     <a
-                        href="https://linkedin.com/in/giancarlo"
+                        href="https://www.linkedin.com/in/giancarlo-ciulla/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="contact-card"
@@ -63,7 +63,7 @@ const Contact = () => {
                         <p>LinkedIn</p>
                     </a>
                     <a
-                        href="https://github.com/GiancarloCiulla"
+                        href="https://www.linkedin.com/in/giancarlo-ciulla/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="contact-card"

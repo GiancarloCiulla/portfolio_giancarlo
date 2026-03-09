@@ -1,25 +1,28 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import ExperienceSummary from "./components/ExperienceSummary";
+import TechStack from "./components/TechStack";
+import ProjectsSection from "./components/ProjectsSection";
+import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
-import Home from "./pages/Home";
-import Portfolio from "./pages/Portfolio";
-import Contact from "./pages/Contact";
-import "../src/styles/globals.scss";
+import "./styles/App.scss";
 
 const App = () => {
     return (
-        <Router> 
+        <div className="app-shell">
             <Navbar />
             <main>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/portfolio" element={<Portfolio />} />
-                    <Route path="/contact" element={<Contact />} />
-                </Routes>
+                <Hero />
+                <About />
+                <ExperienceSummary />
+                <TechStack />
+                <ProjectsSection />
+                <ContactSection />
             </main>
             <Footer />
-        </Router>
+        </div>
     );
 };
 
