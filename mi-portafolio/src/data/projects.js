@@ -61,6 +61,9 @@ const projects = [
       "Coordinacion de frontend con servicios backend",
       "Ajustes para mejorar claridad, velocidad de respuesta y usabilidad"
     ],
+    learnings:
+      "Aprendi a disenar flujos conversacionales mas utiles, ajustar prompts con foco en claridad y coordinar mejor integraciones entre frontend y servicios de IA.",
+    privateNotice: "Demo no pública por confidencialidad del producto.",
     demoLink: "https://chatbot-ai-felgtbi.netlify.app/"
   },
   {
@@ -79,6 +82,9 @@ const projects = [
     contribution: [
       "Desarrolle una arquitectura full stack para flujos publico y admin, implementando autenticacion con JWT para administracion, acceso por PIN para invitados y una base escalable para gestionar eventos, actividades, contactos y reporting RSVP."
     ],
+    learnings:
+      "Consolide buenas practicas para modelado de datos en eventos multiusuario, gestion de permisos por rol y trazabilidad de estados RSVP.",
+    privateNotice: "Demo no pública por confidencialidad del producto.",
     demoLink: "#",
     repoLink: "#"
   }

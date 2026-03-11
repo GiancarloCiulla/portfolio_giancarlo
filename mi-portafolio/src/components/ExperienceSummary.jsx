@@ -6,10 +6,11 @@ const ExperienceSummary = () => {
     <section className="section" id="experiencia">
       <div className="container">
         <div className="section-heading">
-          <p className="eyebrow">Valor profesional</p>
+          <p className="eyebrow">VALOR PROFESIONAL</p>
           <h2>Experiencia destacada</h2>
           <p>
-            Perfil con recorrido en coordinacion tecnologica y foco en resultados para entornos B2B y producto.
+            Experiencia en proyectos digitales, plataformas y entornos B2B, combinando ejecución técnica,
+            coordinación y mejora continua.
           </p>
         </div>
         <div className="highlights-grid">

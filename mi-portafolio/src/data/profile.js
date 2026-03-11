@@ -1,38 +1,35 @@
 export const highlights = [
   {
-    title: "Perfil hibrido en entornos digitales",
+    title: "Proyectos tecnológicos B2B",
     description:
-      "Experiencia en coordinacion de iniciativas tecnologicas y gestion de plataforma en The Bridge, como complemento a un perfil tecnico orientado a desarrollo web."
+      "Participación en iniciativas para Mercedes-Benz, Iberdrola y Canal de Isabel II, coordinando equipos técnicos y supervisando entregables a lo largo del ciclo completo del proyecto."
   },
   {
-    title: "Experiencia B2B con grandes cuentas",
+    title: "Gestión de plataforma Moodle",
     description:
-      "Participacion en proyectos para Mercedes-Benz, Iberdrola y Canal de Isabel II junto a equipos multidisciplinares."
+      "Gestión funcional y técnica de Moodle, incluyendo mantenimiento, carga de contenidos, resolución de incidencias y soporte a más de 600 usuarios."
   },
   {
-    title: "Moodle para +600 usuarios",
+    title: "Optimización técnica",
     description:
-      "Gestion funcional y tecnica de plataforma educativa, mejorando operativa, soporte y consistencia de procesos."
+      "Mejora del rendimiento frontend/backend, consiguiendo una reducción del 40% en tiempos de carga y errores en la plataforma."
   },
   {
-    title: "Optimizacion y Agile",
+    title: "Agile y herramientas de producto",
     description:
-      "Mejora de rendimiento frontend/backend y colaboracion con metodologia Agile, stakeholders y equipos de producto."
+      "Experiencia con Agile, Notion, Trello, HubSpot y Google Workspace para planificación, seguimiento de entregables, gestión colaborativa y documentación."
   }
 ];
 
 export const techStack = {
-  frontend: ["HTML5", "CSS3", "JavaScript", "React", "Sass/SCSS", "Vite"],
+  frontend: ["HTML5", "CSS3", "JavaScript", "React", "SASS/SCSS", "Vite"],
   backend: ["Node.js", "Express"],
   databases: ["SQL", "MongoDB", "SQLite"],
   tools: [
     "Git",
     "GitHub",
     "Docker",
-    "Axios",
-    "ESLint",
-    "Vitest",
-    "Testing Library",
+    "Testing",
     "Notion",
     "Trello",
     "HubSpot",
@@ -42,11 +39,11 @@ export const techStack = {
 };
 
 export const softSkills = [
-  "Espanol",
-  "Ingles",
+  "Español",
+  "Inglés",
   "Italiano",
-  "Comunicacion efectiva",
-  "Resolucion de problemas",
-  "Empatia",
+  "Comunicación efectiva",
+  "Resolución de problemas",
+  "Empatía",
   "Liderazgo colaborativo"
 ];

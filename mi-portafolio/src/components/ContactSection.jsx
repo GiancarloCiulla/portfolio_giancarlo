@@ -5,11 +5,12 @@ const ContactSection = () => {
     <section className="section contact-section" id="contacto">
       <div className="container">
         <div className="section-heading">
-          <p className="eyebrow">Contacto</p>
+          <p className="eyebrow">CONTACTO</p>
           <h2>Hablemos</h2>
           <p>
-            Si tienes una oportunidad laboral o una colaboracion alineada con desarrollo web y producto, estare
-            encantado de conversar.
+            Actualmente busco oportunidades como desarrollador web full stack. Si quieres conocer más sobre mi
+            trabajo, mi experiencia en proyectos digitales o valorar una posible colaboración, estaré encantado
+            de conectar.
           </p>
         </div>
 

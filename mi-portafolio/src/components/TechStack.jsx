@@ -13,8 +13,8 @@ const TechStack = () => {
     <section className="section" id="stack">
       <div className="container">
         <div className="section-heading">
-          <p className="eyebrow">Stack tecnologico</p>
-          <h2>Tecnologias y herramientas</h2>
+          <p className="eyebrow">STACK TECNOLÓGICO</p>
+          <h2>Tecnologías y herramientas</h2>
         </div>
 
         <div className="stack-grid">

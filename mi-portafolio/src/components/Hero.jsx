@@ -2,19 +2,20 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="hero section" aria-label="Presentacion principal">
+    <section className="hero section" aria-label="Presentación principal">
       <div className="container hero-layout">
         <div className="hero-content">
-          <p className="eyebrow">Desarrollador Web Fullstack</p>
+          <p className="eyebrow">DESARROLLADOR WEB FULLSTACK</p>
           <h1>Giancarlo Ciulla</h1>
           <p className="hero-subtitle">
-            Desarrollador Web Fullstack con base tecnica en desarrollo de aplicaciones web. Construyo productos
-            funcionales, escalables y centrados en el usuario con React, Node.js y una vision orientada a
-            producto.
+            Desarrollador web full stack con formación técnica en sistemas y especialización en desarrollo web
+            en The Bridge. Construyo aplicaciones funcionales, escalables y centradas en el usuario con
+            JavaScript, React y Node.js.
           </p>
           <p className="hero-support">
-            Mi perfil hibrido entre desarrollo, producto y gestion complementa el enfoque tecnico con una
-            ejecucion clara, organizada y alineada a objetivos de negocio.
+            Mi experiencia en proyectos tecnológicos B2B y plataformas digitales me permite combinar criterio
+            técnico, organización y foco en la experiencia de uso para desarrollar soluciones claras y
+            mantenibles.
           </p>
           <div className="hero-actions">
             <a href="#proyectos">Ver proyectos</a>
@@ -40,15 +41,15 @@ const Hero = () => {
           </div>
         </div>
         <div className="hero-panel">
-          <p className="hero-panel-title">Perfil</p>
+          <p className="hero-panel-title">PERFIL</p>
           <p className="hero-panel-description">
-            Desarrollador web full stack con foco en interfaces claras, logica solida y productos digitales
-            funcionales.
+            Desarrollo web con foco en producto, arquitectura funcional y experiencia de usuario, apoyado por
+            experiencia real en plataformas y coordinación técnica.
           </p>
           <ul className="hero-panel-points">
-            <li>Frontend moderno con React y JavaScript</li>
-            <li>Backend funcional con Node.js y Express</li>
-            <li>Enfoque en producto, usabilidad y mantenibilidad</li>
+            <li>Frontend con React, JavaScript y SASS</li>
+            <li>Backend con Node.js, testing y lógica funcional</li>
+            <li>Bases de datos, despliegue y trabajo bajo Agile</li>
           </ul>
         </div>
       </div>

@@ -10,10 +10,11 @@ const ProjectsSection = () => {
     <section className="section projects-section" id="proyectos">
       <div className="container">
         <div className="section-heading">
-          <p className="eyebrow">Proyectos</p>
+          <p className="eyebrow">PROYECTOS</p>
           <h2>Portfolio seleccionado</h2>
           <p>
-            Tres proyectos elegidos para mostrar enfoque de producto, capacidad tecnica y criterio de implementacion.
+            Tres proyectos elegidos para mostrar desarrollo full stack, enfoque de producto y capacidad de
+            implementación en contextos reales.
           </p>
         </div>
 

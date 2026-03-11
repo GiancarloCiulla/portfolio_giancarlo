@@ -17,8 +17,6 @@ const ProjectCard = ({ project }) => {
         learnings,
         privateNotice,
         statusTags,
-        demoLink,
-        repoLink,
         featured
     } = project;
 
@@ -82,17 +80,7 @@ const ProjectCard = ({ project }) => {
 
                 {learnings && <p className="project-learnings">Aprendizajes: {learnings}</p>}
 
-                {privateNotice ? (
-                    <p className="project-confidential">{privateNotice}</p>
-                ) : (
-                    <div className="project-actions">
-                        <a href={demoLink} target="_blank" rel="noopener noreferrer">
-                            Demo
-                        </a>
-                        
-            
-                    </div>
-                )}
+                {privateNotice && <p className="project-confidential">{privateNotice}</p>}
             </div>
         </article>
     );
